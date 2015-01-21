@@ -26,7 +26,7 @@ int main(int argc, char* argv[])
       if ((line.find(xmltag)) == 0) {
 
         // Rescues the trapped string!
-        string trapped = line.substr(xmltag.length(), line.length() - (xmltag.length() * 2 + 2));
+        string trapped = line.substr(xmltag.length(), line.length() - (xmltag.length() * 2 + 1));
         rescuer.push_back(trapped);
       }
     }
