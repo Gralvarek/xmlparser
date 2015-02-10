@@ -2,7 +2,7 @@
 #include <fstream>
 #include <string>
 #include <vector>
-#include "rescue.cpp"
+#include "rescue.h"
 using namespace std;
 
 
