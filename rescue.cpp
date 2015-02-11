@@ -1,6 +1,6 @@
 #include "rescue.h"
 
-Rescue::vector<string> rescuer(fstream file, string line, string xmltag) 
+Rescue::vector<string> rescuer(fstream file, string line, string xmltag)
 {
   // Initializes the rescuer
   vector<string> rescuer;
@@ -15,23 +15,17 @@ Rescue::vector<string> rescuer(fstream file, string line, string xmltag)
       // Finds the tag at the beginning of the line
       if ((line.find(xmltag)) == 0) {
 
-	// Rescues the trapped string!
-	string trapped = line.substr(xmltag.length(), line.length() 
-				     - (xmltag.length() * 2 + 1));
-	rescuer.push_back(trapped);
+	       // Rescues the trapped string!
+	       string trapped = line.substr(xmltag.length(), line.length()
+				                   - (xmltag.length() * 2 + 1));
+	       rescuer.push_back(trapped);
       }
     }
-
-    // Test Only
-    for (unsigned i = 0; i < rescuer.size(); i++) {
-      cout << rescuer.at(i) << endl;
-    }
-
     // Closes file
     file.close();
   }
   else cout << "Unable to open file." << endl;
-  
+
   // Returns the rescued strings in a vector
-  return rescuer; 
+  return rescuer;
 }

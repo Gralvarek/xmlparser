@@ -16,8 +16,13 @@ int main()
 
   // Reads in xml tag
   string xmltag = "<Val>";
-  
+
   rescued = resc.rescuer(file, line, xmltag);
+
+  // Test Only
+  for (unsigned i = 0; i < rescuer.size(); i++) {
+    cout << rescued.at(i) << endl;
+  }
 
   return 0;
 }
