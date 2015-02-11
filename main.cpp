@@ -20,7 +20,7 @@ int main()
   rescued = resc.rescuer(file, line, xmltag);
 
   // Test Only
-  for (unsigned i = 0; i < rescuer.size(); i++) {
+  for (unsigned i = 0; i < rescued.size(); i++) {
     cout << rescued.at(i) << endl;
   }
 
