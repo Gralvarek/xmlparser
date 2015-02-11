@@ -1,5 +1,5 @@
 class Rescue
 {
  public:
-  std::vector<std::string> rescuer(std::fstream file, std::string line, std::string xmltag);
+  std::vector<string> rescuer(fstream file, string line, string xmltag);
 };
