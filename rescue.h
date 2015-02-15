@@ -5,7 +5,7 @@
 class Rescue
 {
  public:
-  Vector rescuer(fstream file, string line, string xmltag);
+	vector<string> rescuer(string line, string xmltag);
 };
 
 #endif RESCUE_H
