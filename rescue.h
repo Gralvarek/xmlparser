@@ -4,8 +4,8 @@
 
 class Rescue
 {
- public:
-	vector<string> rescuer(string line, string xmltag);
+	public:
+		vector<string> rescuer(string line, string xmltag);
 };
 
 #endif RESCUE_H
