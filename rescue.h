@@ -1,11 +1,12 @@
 #ifndef RESCUE_H
 #define RESCUE_H
 #pragma once
+#include "stdafx.h"
 
 class Rescue
 {
-	public:
-		vector<string> rescuer(string line, string xmltag);
+ public:
+  std::vector<string> rescuer(string line, string xmltag);
 };
 
-#endif RESCUE_H
+#endif
