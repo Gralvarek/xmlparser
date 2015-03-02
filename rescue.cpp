@@ -1,7 +1,13 @@
 #include "stdafx.h"
 
+<<<<<<< HEAD
 vector<string> Rescue::rescuer(fstream file, string line, string xmltag)
+=======
+vector<string> Rescue::rescuer(string line, string xmltag)
+>>>>>>> origin/classes
 {
+
+  fstream file("test.xml", ios::in | ios::binary);	
   // Initializes the rescuer
   vector<string> rescuer;
 

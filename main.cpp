@@ -3,7 +3,6 @@
 int main()
 {
   // Initializes local variables
-  fstream file("test.xml", ios::in | ios::binary);
   string line;
   vector<string> rescued;
   Rescue resc;
@@ -11,7 +10,7 @@ int main()
   // Reads in xml tag
   string xmltag = "<Val>";
 
-  rescued = resc.rescuer(file, line, xmltag);
+  rescued = resc.rescuer(line, xmltag);
 
   // Test Only
   for (unsigned i = 0; i < rescued.size(); i++) {
