@@ -1,6 +1,6 @@
 #include "stdafx.h"
 
-Vector Rescue::rescuer(fstream file, string line, string xmltag)
+vector<string> Rescue::rescuer(fstream file, string line, string xmltag)
 {
   // Initializes the rescuer
   vector<string> rescuer;
